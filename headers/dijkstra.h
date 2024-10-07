@@ -7,14 +7,14 @@
 #include <set>
 #include <climits>
 
-class Graph {
+class Dijkstra {
 private:
     int V; 
     std::vector<std::list<std::pair<int, int>>> adj; 
 
 public:
     // Konstruktor grafu
-    Graph(int V) : V(V), adj(V) {}
+    Dijkstra(int V) : V(V), adj(V) {}
 
     // Funkcja dodająca krawędź do grafu
     void addEdge(int u, int v, int w) {

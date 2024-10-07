@@ -7,14 +7,14 @@
 #include <limits>
 
 // Klasa reprezentująca graf
-class Graph {
+class BellmanFord {
 private:
     int V;
     std::vector<std::tuple<int, int, int>> edges;
 
 public:
     // Konstruktor grafu
-    Graph(int V) : V(V) {}
+    BellmanFord(int V) : V(V) {}
 
     // Funkcja dodająca krawędź do grafu
     void addEdge(int u, int v, int w) {

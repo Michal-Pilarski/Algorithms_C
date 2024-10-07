@@ -6,14 +6,14 @@
 #include <list>
 #include <queue>
 
-class Graph {
+class BFSGraph {
 private:
     int V;                 
     std::vector<std::list<int>> adj; 
 
 public:
     // Konstruktor grafu
-    Graph(int V) : V(V), adj(V) {}
+    BFSGraph(int V) : V(V), adj(V) {}
 
     // Funkcja dodająca krawędź do grafu
     void addEdge(int v, int w) {

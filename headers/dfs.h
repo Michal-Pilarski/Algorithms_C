@@ -6,7 +6,7 @@
 #include <list>
 
 // Klasa reprezentująca graf za pomocą listy sąsiedztwa
-class Graph {
+class DFSGraph {
 private:
     int V; // Liczba wierzchołków
     std::vector<std::list<int>> adj; // Wektor list sąsiedztwa
@@ -25,7 +25,7 @@ private:
 
 public:
     // Konstruktor grafu
-    Graph(int V) : V(V), adj(V) {}
+    DFSGraph(int V) : V(V), adj(V) {}
 
     // Funkcja dodająca krawędź do grafu
     void addEdge(int v, int w) {

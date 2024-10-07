@@ -29,7 +29,7 @@ int main() {
     }
     cout << endl;
 
-    Graph g(5);
+    BellmanFord g(5);
     g.addEdge(0, 1, -1);
     g.addEdge(0, 2, 4);
     g.addEdge(1, 2, 3);
