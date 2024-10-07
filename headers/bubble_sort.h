@@ -3,7 +3,7 @@
 
 #include <vector>
 
-// template
+// template - szablon, po to żeby funkcja działała na dowolnym typie zmiennych
 template <typename T>
 void bubbleSort(std::vector<T>& arr) {
     bool swapped;
